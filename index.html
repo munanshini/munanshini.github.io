@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <!-- 让网页在手机上正常缩放，这一行别删 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ↓↓↓ 浏览器标签页上显示的标题，改成你自己的 ↓↓↓ -->
+  <title>张南 · 设计师转 AI 产品经理</title>
+  <meta name="description" content="设计出身，正在做 AI 产品，也在记录 AI 时代的日常。" />
+
+  <style>
+    /* =========================================================
+       下面是网页的“样式”。改文字看 <body>，改外观看这里。
+       颜色、字号、间距都在这一块，改一改就能看到效果。
+       ========================================================= */
+    :root {
+      --ink:      #1a1a1f;   /* 主文字色（近黑） */
+      --soft:     #6b6b76;   /* 次要文字（灰） */
+      --line:     #e6e4df;   /* 分隔线 */
+      --bg:       #faf9f6;   /* 背景（暖白） */
+      --accent:   #4f46e5;   /* 强调色（链接、按钮）想换风格改这个 */
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+    }
+
+    .card {
+      max-width: 560px;
+      width: 100%;
+    }
+
+    /* 名字 */
+    .name {
+      font-size: clamp(36px, 8vw, 56px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    /* 一句话介绍 */
+    .tagline {
+      margin-top: 16px;
+      font-size: 18px;
+      color: var(--soft);
+    }
+
+    /* 正文段落 */
+    .bio {
+      margin-top: 28px;
+      font-size: 17px;
+      color: var(--ink);
+    }
+    .bio + .bio { margin-top: 14px; }
+
+    /* 链接区 */
+    .links {
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+    }
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+      transition: border-color .15s ease;
+    }
+    .links a:hover { border-bottom-color: var(--accent); }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: var(--soft);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- =========================================================
+       下面是网页的“内容”。把文字改成你自己的就行。
+       链接里的 # 换成真实地址（比如你的小红书/抖音主页链接）。
+       ========================================================= -->
+  <main class="card">
+    <h1 class="name">张南</h1>
+    <p class="tagline">设计师 → AI 产品经理 · 现居深圳</p>
+
+    <p class="bio">
+      六年交互设计经验，现在全职做 AI 产品。在思考怎么把生成式 AI 的能力
+      装进可靠、可解释的界面里。
+    </p>
+    <p class="bio">
+      也在做自媒体，记录 AI 怎么改变普通人的日常。
+    </p>
+
+    <nav class="links">
+      <a href="#" target="_blank" rel="noopener">小红书</a>
+      <a href="#" target="_blank" rel="noopener">抖音</a>
+      <a href="#" target="_blank" rel="noopener">微信公众号</a>
+      <a href="mailto:你的邮箱@example.com">邮箱</a>
+    </nav>
+
+    <p class="footer">© 2026 张南</p>
+  </main>
+</body>
+</html>
